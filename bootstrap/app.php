@@ -23,8 +23,8 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
-//uncomment
 $app->withFacades();
+
 $app->withEloquent();
 
 /*
@@ -60,6 +60,8 @@ $app->singleton(
 */
 
 $app->configure('app');
+
+$app->configure('services');
 
 /*
 |--------------------------------------------------------------------------
